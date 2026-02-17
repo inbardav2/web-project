@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECO Life Tips | Saving Electricity</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/tips.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>ECO Life Tips</h1>
+
+      <div class="header-row">
+        <div class="search">
+          <input type="search" placeholder="search..." />
+          <button type="submit" title="Not implemented">search</button>
+        </div>
+
+        <a href="#" class="login" title="Not implemented">Log In</a>
+      </div>
+
+      <nav class="buttonnav">
+        <a href="../Index.html">Home |</a>
+        <a href="tip-electricity.html" class="active-page">Electricity Tips |</a>
+        <a href="tip-water.html">Water Tips |</a>
+        <a href="calculator.html">Footprint Calculator |</a>
+        <a href="gallery.html">Gallery |</a>
+        <a href="#" title="Not implemented">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-header">
+        <h2>Saving Electricity</h2>
+        <h5>Small daily changes that reduce electricity waste</h5>
+      </section>
+
+      <article class="tip-layout">
+        <!-- BOX 1: Tips list -->
+        <section class="tip-box">
+          <h3>Quick actions (do today)</h3>
+          <ul>
+            <li>Switch to LED bulbs</li>
+            <li>Unplug chargers (avoid standby)</li>
+            <li>Set AC to a stable temperature</li>
+            <li>Use eco programs in washing machine</li>
+          </ul>
+        </section>
+
+        <!-- BOX 2: Video (multimedia) -->
+        <section class="tip-box">
+          <h3>Short video (multimedia)</h3>
+          <p>Watch this short tip video:</p>
+
+          <!-- שים קובץ בתיקיית Images בשם eco-electric-tip.mp4 -->
+          <video class="video" controls preload="metadata">
+            <source
+              src="../Images/Energy-saving tips - Peoples Gas Chicago (720p, h264).mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+
+        <!-- BOX 3: jQuery interactive form (WIDE like in water page) -->
+        <section class="tip-box wide">
+          <h3>Mini check</h3>
+
+          <form id="electricForm">
+            <label for="mainUse"
+              >What uses the most electricity in your home?</label
+            >
+            <select id="mainUse">
+              <option value="">Choose</option>
+              <option value="ac">Air conditioner</option>
+              <option value="waterheater">Water heater</option>
+              <option value="lighting">Lighting</option>
+              <option value="standby">Chargers / Standby</option>
+            </select>
+
+            <!-- מופיע רק אם בוחרים AC -->
+            <div id="acHoursWrap">
+              <label for="hoursAc">If you chose AC: average daily hours?</label>
+              <input
+                type="number"
+                id="hoursAc"
+                min="0"
+                max="24"
+                placeholder="e.g., 6"
+              />
+              <small class="hint">Valid only if AC selected (1-24)</small>
+            </div>
+
+            <button class="action-btn" type="submit">Get recommendation</button>
+
+            <p class="feedback" id="electricFeedback" aria-live="polite"></p>
+          </form>
+          <button class="action-btn" id="goGalleryElectric" type="button">
+            View Electricity Inspiration →
+          </button>
+        </section>
+      </article>
+
+      <nav class="page-nav">
+        <a class="nav-btn" href="tip-water.html">← Back: Saving Water</a>
+        <a class="nav-btn" href="../Index.html">Back to Home →</a>
+      </nav>
+    </main>
+
+    <footer>
+      <span>© 2025 ECO Life Tips | Student Project</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../JS/electricityTips.js"></script>
+  </body>
+</html>

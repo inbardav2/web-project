@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECO Life Tips | Footprint Calculator</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/calculator.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>ECO Life Tips</h1>
+                <div class="header-row">
+                    <div class="search">
+                    <input type="search" placeholder="search..." />
+                    <button type="submit" title="Not implemented">search</button>
+                    </div>
+
+                <a href="#" class="login" title="Not implemented">Log In</a>
+                </div>            
+            <nav class="buttonnav">
+                <a href="../Index.html">Home |</a>
+                <a href="tip-electricity.html">Electricity Tips |</a>
+                <a href="tip-water.html">Water Tips |</a>
+                <a href="#" class="active-page">Footprint Calculator |</a>
+                <a href="gallery.html">Gallery |</a>
+                <a href="#" title="Not implemented">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <form method="post" action="calc.php" id="ecoForm" novalidate>
+                <h2>Fill in your habits and discover your eco score 🌱</h2>
+                <section class="form-section">
+                    <h3>Your Details</h3>
+                    <div class="form-row">
+                        <label class="field">Name <input type="text" name="name" required></label>
+                        <label class="field">Email <input type="email" name="email" required></label>
+                    </div>
+                </section>
+
+                <fieldset class="form-section">
+                    <legend>Water Saving</legend>
+                    <div class="form-row">
+                        <label class="field">Average shower time (minutes)<input type="number" name="shower_time" min="1" max="60" required></label>
+                        <label class="field">Do you turn off the tap while brushing teeth?
+                            <select name="brush_teeth" required>
+                                <option value="">Choose</option>
+                                <option value="yes">Always</option>
+                                <option value="sometimes">Sometimes</option>
+                                <option value="no">Never</option>
+                            </select>
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend>Energy Saving</legend>
+                    
+                    <div class="form-row">
+                        <label class="field">AC Temperature in Summer
+                            <select name="ac_temp">
+                                <option value="cold">Below 22°C</option>
+                                <option value="medium">22°C - 24°C</option>
+                                <option value="eco">25°C or above</option>
+                            </select>
+                        </label>
+
+                        <label class="field">Do you use full laundry loads?
+                            <select name="laundry">
+                                <option value="yes">Yes, always</option>
+                                <option value="no">No, even for a few items</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-row radios">
+                        <span>Lighting type:</span>
+                        <label class="radio-box">
+                            <input type="radio" name="light" value="led" required> LED (Energy Saving)</label>
+                        <label class="radio-box"><input type="radio" name="light" value="regular"> Regular Bulbs</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend>General Habits</legend>
+                    <div class="form-row">
+                        <label class="field">Main Transport Mode
+                            <select name="transport">
+                                <option value="car">Private Car</option>
+                                <option value="bus">Public Transport</option>
+                                <option value="bike_walk">Bike / Walking</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-row radios">
+                        <span>Do you recycle plastic and paper?</span>
+                        <label class="radio-box">
+                            <input type="radio" name="recycle" value="yes" required> Yes</label>
+                        <label class="radio-box">
+                            <input type="radio" name="recycle" value="no"> No</label>
+                    </div>
+                </fieldset>
+
+                <div class="buttons">
+                    <button type="submit">Calculate Score</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+            <div id="result-container" class="result-card" style="display: none;">
+                <h2 id="result-status"></h2>
+                <h3 id="result-score-display"></h3>
+                <ul id="tips-list"></ul>
+                <div id="next-steps">
+                    <p>Want to improve your score? Check out our guides:</p>
+                    <a href="tip-water.html">Water Saving</a> | 
+                    <a href="tip-electricity.html"> Energy Saving</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <span>© 2025 ECO Life Tips | Student Project</span>
+        </footer>
+        
+        <script src="../JS/calc.js"></script>
+
+    </body>
+
+</html>
