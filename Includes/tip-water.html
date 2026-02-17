@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECO Life Tips | Saving Water</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/tips.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>ECO Life Tips</h1>
+
+      <div class="header-row">
+        <div class="search">
+          <input type="search" placeholder="search..." />
+          <button type="submit" title="Not implemented">search</button>
+        </div>
+
+        <a href="#" class="login" title="Not implemented">Log In</a>
+      </div>
+
+      <nav class="buttonnav">
+        <a href="../Index.html">Home |</a>
+        <a href="tip-electricity.html">Electricity Tips |</a>
+        <a href="tip-water.html" class="active-page">Water Tips |</a>
+        <a href="calculator.html">Footprint Calculator |</a>
+        <a href="gallery.html">Gallery |</a>
+        <a href="#" title="Not implemented">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-header">
+        <h2>Saving Water</h2>
+        <h5>Easy habits that reduce water waste at home</h5>
+      </section>
+
+      <article class="tip-layout">
+        <section class="tip-box">
+          <h3>Quick actions (do today)</h3>
+          <ul>
+            <li>Turn off the tap while brushing teeth</li>
+            <li>Shorten your shower by 2 minutes</li>
+            <li>Run the washing machine only when full</li>
+            <li>Fix leaks (a small drip becomes a lot)</li>
+          </ul>
+        </section>
+
+        <section class="tip-box">
+          <h3>Daily tip (interactive)</h3>
+          <p>Click to get a random water-saving tip:</p>
+
+          <button class="action-btn" id="waterTipBtn" type="button">
+            Give me a tip
+          </button>
+          <p class="feedback" id="waterTipFeedback" aria-live="polite">
+            No tip yet.
+          </p>
+        </section>
+
+        <section class="tip-box wide">
+          <h3>Mini check (with feedback)</h3>
+
+          <form id="waterMiniForm">
+            <label for="showerMinutes">How long is your average shower (minutes)?</label>
+            <input
+              type="number"
+              id="showerMinutes"
+              min="1"
+              max="60"
+              placeholder="e.g., 8"
+            />
+
+            <label for="tapHabit">Do you close the tap while brushing teeth?</label>
+            <select id="tapHabit">
+              <option value="">Choose</option>
+              <option value="yes">Yes</option>
+              <option value="sometimes">Sometimes</option>
+              <option value="no">No</option>
+            </select>
+
+            <button class="action-btn" type="submit">Get recommendation</button>
+
+            <p class="feedback" id="waterMiniFeedback" aria-live="polite"></p>
+          </form>
+          <button class="action-btn" id="goGalleryWater" type="button">
+            View Water Inspiration →
+          </button>
+        </section>
+      </article>
+
+      <nav class="page-nav">
+        <a class="nav-btn" href="../Index.html">← Back to Home</a>
+        <a class="nav-btn" href="tip-electricity.html">Next: Saving Electricity →</a>
+      </nav>
+    </main>
+
+    <footer>
+      <span>© 2025 ECO Life Tips | Student Project</span>
+    </footer>
+
+    <script src="../JS/waterTips.js"></script>
+  </body>
+</html>
