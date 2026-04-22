@@ -253,7 +253,7 @@ button,
     background-color: #a5d66a;
 }
 
-/* 📱 מובייל */
+/* mobile*/
 @media (max-width: 600px) {
 
     .cards {
