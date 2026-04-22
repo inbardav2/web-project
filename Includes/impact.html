@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Eco Life</h1>
+
+        <div class="header-row">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Go</button>
+            </div>
+            <a href="#" class="login">Login</a>
+        </div>
+
+        <nav class="buttonnav">
+            <a href="../index.html">Home |</a>
+            <a href="tip-electricity.html">Electricity Tips |</a>
+            <a href="tip-water.html">Water Tips |</a>
+            <a href="calculator.html">Footprint Calculator |</a>
+            <a href="gallery.html">Gallery |</a>
+            <a href="challenges.html">Challenges (new!) |</a>
+            <a href="impact.html" class="active-page">Impact (new!) |</a>
+            <a href="#">About |</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="content-header">
+            <h2>Your Impact 🌍</h2>
+        </section>
+
+        <section class="impact">
+
+            <div class="box">
+                <h3>💧 Water</h3>
+                <p id="water">0</p>
+            </div>
+
+            <div class="box">
+                <h3>🚴 CO₂</h3>
+                <p id="co2">0</p>
+            </div>
+
+            <div class="box">
+                <h3>🧴 Plastic</h3>
+                <p id="plastic">0</p>
+            </div>
+
+        </section>
+
+        <div class="center">
+            <button onclick="calculateImpact()">Calculate</button>
+            <button onclick="resetImpact()">Reset</button>
+        </div>
+        <div class="center">
+            <a href="challenges.html" class="secondary-btn">← Back to Challenges</a>
+        </div>
+        <section class="selected">
+            <h3>Your Challenges:</h3>
+            <ul id="list"></ul>
+        </section>
+
+        <section class="progress-section">
+            <h3>Your Progress</h3>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+            <p id="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Eco Life ©</p>
+    </footer>
+
+    <script src="../js/impact.js"></script>
+</body>
+
+<p id="score"></p>
+
+</html>
+<script>
+    showSelected();
+    updateProgress();
+</script>

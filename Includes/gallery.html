@@ -1,118 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECO Life Tips | Green Inspiration</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
-    <link rel="stylesheet" type="text/css" href="../CSS/tips.css"/>
-    <link rel="stylesheet" type="text/css" href="../CSS/gallery.css"/>
-  </head>
 
-  <body>
-    <header>
-      <h1>ECO Life Tips</h1>
-      <div class="header-row">
-        <div class="search">
-          <input type="search" placeholder="search..." />
-          <button type="submit" title="Not implemented">search</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECO Life Tips | Green Inspiration</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+  <link rel="stylesheet" type="text/css" href="../CSS/tips.css" />
+  <link rel="stylesheet" type="text/css" href="../CSS/gallery.css" />
+</head>
 
-      <a href="#" class="login" title="Not implemented">Log In</a>
+<body>
+  <header>
+    <h1>ECO Life Tips</h1>
+    <div class="header-row">
+      <div class="search">
+        <input type="search" placeholder="search..." />
+        <button type="submit" title="Not implemented">search</button>
       </div>
 
-      <nav class="buttonnav">
-        <a href="../index.html">Home |</a>
-        <a href="tip-electricity.html">Electricity Tips |</a>
-        <a href="tip-water.html">Water Tips |</a>
-        <a href="calculator.html">Footprint Calculator |</a>
-        <a href="gallery.html" class="active-page">Gallery |</a>
-        <a href="#" title="Not implemented">About</a>
-      </nav>
-    </header>
+      <a href="#" class="login" title="Not implemented">Log In</a>
+    </div>
 
-    <main>
-      <section class="content-header">
-        <h2>Green Inspiration Gallery</h2>
-        <h5 id="galleryTitle">Green Inspiration for a Better Planet 🌍</h5>
+    <nav class="buttonnav">
+      <a href="../index.html">Home |</a>
+      <a href="tip-electricity.html">Electricity Tips |</a>
+      <a href="tip-water.html">Water Tips |</a>
+      <a href="calculator.html">Footprint Calculator |</a>
+      <a href="gallery.html" class="active-page">Gallery |</a>
+      <a href="challenges.html">Challenges (new!) |</a>
+      <a href="impact.html">Impact (new!) |</a>
+      <a href="#" title="Not implemented">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-header">
+      <h2>Green Inspiration Gallery</h2>
+      <h5 id="galleryTitle">Green Inspiration for a Better Planet 🌍</h5>
+    </section>
+
+    <article class="tip-layout">
+      <!-- Water Gallery -->
+      <section class="tip-box wide" id="waterGallery">
+        <h3>Water Saving Inspiration 💧</h3>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="../Images/water1.jpg" alt="Water tip inspiration 1" />
+            <figcaption>Shorter showers</figcaption>
+            <div class="tip-overlay">
+              <p>Reducing your shower by just 2 minutes can save up to 150 liters of water per month! 💧</p>
+            </div>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="../Images/water2.jpg" alt="Water tip inspiration 2" />
+            <figcaption>Fix leaks</figcaption>
+            <div class="tip-overlay">
+              <p>A small drip can waste over 30 liters of water a day. Fix leaks early to save water and money! 🔧</p>
+            </div>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="../Images/water3.jpg" alt="Water tip inspiration 3" />
+            <figcaption>Turn off tap</figcaption>
+            <div class="tip-overlay">
+              <p>Turning off the tap while brushing your teeth can save up to 6 liters of water every minute! 🪥</p>
+            </div>
+          </figure>
+        </div>
       </section>
 
-      <article class="tip-layout">
-        <!-- Water Gallery -->
-        <section class="tip-box wide" id="waterGallery">
-          <h3>Water Saving Inspiration 💧</h3>
+      <!-- Electricity Gallery -->
+      <section class="tip-box wide" id="electricGallery">
+        <h3>Electricity Saving Inspiration ⚡</h3>
 
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <img src="../Images/water1.jpg" alt="Water tip inspiration 1" />
-              <figcaption>Shorter showers</figcaption>
-              <div class = "tip-overlay">
-              <p>Reducing your shower by just 2 minutes can save up to 150 liters of water per month! 💧</p>
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <img src="../Images/water2.jpg" alt="Water tip inspiration 2" />
-              <figcaption>Fix leaks</figcaption>
-              <div class = "tip-overlay">
-              <p>A small drip can waste over 30 liters of water a day. Fix leaks early to save water and money! 🔧</p>
-              </div>
-            </figure>
-
-            <figure class="gallery-item">
-              <img src="../Images/water3.jpg" alt="Water tip inspiration 3" />
-              <figcaption>Turn off tap</figcaption>
-              <div class = "tip-overlay">
-              <p>Turning off the tap while brushing your teeth can save up to 6 liters of water every minute! 🪥</p>
-              </div>
-            </figure>
-          </div>
-        </section>
-
-        <!-- Electricity Gallery -->
-        <section class="tip-box wide" id="electricGallery">
-          <h3>Electricity Saving Inspiration ⚡</h3>
-
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <img src="../Images/electric1.jpg"alt="Electricity tip inspiration 1"/>
-              <figcaption>LED lighting</figcaption>
-              <div class = "tip-overlay">
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="../Images/electric1.jpg" alt="Electricity tip inspiration 1" />
+            <figcaption>LED lighting</figcaption>
+            <div class="tip-overlay">
               <p>LED bulbs use 80% less energy and last much longer than traditional incandescent bulbs. 💡</p>
-              </div>  
-            </figure>
+            </div>
+          </figure>
 
-            <figure class="gallery-item">
-              <img src="../Images/electric2.jpg" alt="Electricity tip inspiration 2"/>
-              <figcaption>Unplug chargers</figcaption>
-              <div class = "tip-overlay"> 
-                <p>Devices left on standby still consume power. Unplug chargers when not in use to avoid waste! 🔌</p>
-              </div>
-            </figure>
+          <figure class="gallery-item">
+            <img src="../Images/electric2.jpg" alt="Electricity tip inspiration 2" />
+            <figcaption>Unplug chargers</figcaption>
+            <div class="tip-overlay">
+              <p>Devices left on standby still consume power. Unplug chargers when not in use to avoid waste! 🔌</p>
+            </div>
+          </figure>
 
-            <figure class="gallery-item">
-              <img src="../Images/electric3.jpg" alt="Electricity tip inspiration 3"/>
-              <figcaption>Smart thermostat</figcaption>
-              <div class = "tip-overlay">
-                <p>Setting your AC to a stable 25°C is the most efficient way to keep cool while saving energy. 🌡️</p>
-              </div>
-            </figure>
-          </div>
-        </section>
-      </article>
+          <figure class="gallery-item">
+            <img src="../Images/electric3.jpg" alt="Electricity tip inspiration 3" />
+            <figcaption>Smart thermostat</figcaption>
+            <div class="tip-overlay">
+              <p>Setting your AC to a stable 25°C is the most efficient way to keep cool while saving energy. 🌡️</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+    </article>
 
-      <nav class="page-nav">
-        <a class="nav-btn" href="../index.html">← Back to Home</a>
-        <a class="nav-btn" href="./tip-water.html">Water Tip</a>
-        <a class="nav-btn" href="./tip-electricity.html">Electricity Tip</a>
-      </nav>
-    </main>
+    <nav class="page-nav">
+      <a class="nav-btn" href="../index.html">← Back to Home</a>
+      <a class="nav-btn" href="./tip-water.html">Water Tip</a>
+      <a class="nav-btn" href="./tip-electricity.html">Electricity Tip</a>
+    </nav>
+  </main>
 
-    <footer>
-      <span>© 2025 ECO Life Tips | Student Project</span>
-    </footer>
-    <script src="../JS/gallery.js"></script>
-  </body>
+  <footer>
+    <span>© 2025 ECO Life Tips | Student Project</span>
+  </footer>
+  <script src="../JS/gallery.js"></script>
+</body>
+
 </html>
-
-

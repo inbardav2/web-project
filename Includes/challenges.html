@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Eco Life</h1>
+
+        <div class="header-row">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button>Go</button>
+            </div>
+            <a href="#" class="login" title="Not implemented">Login</a>
+        </div>
+
+        <nav class="buttonnav">
+            <a href="../index.html">Home |</a>
+            <a href="tip-electricity.html">Electricity Tips |</a>
+            <a href="tip-water.html">Water Tips |</a>
+            <a href="calculator.html">Footprint Calculator |</a>
+            <a href="gallery.html">Gallery |</a>
+            <a href="challenges.html" class="active-page">Challenges (new!) |</a>
+            <a href="impact.html">Impact (new!) |</a>
+            <a href="#" title="Not implemented">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="content-header">
+            <h2>Eco Challenges 🌱</h2>
+            <p>Choose challenges and improve your impact</p>
+        </section>
+        <section class="filters">
+            <button onclick="filterChallenges('all')">All</button>
+            <button onclick="filterChallenges('transport')">Transport</button>
+            <button onclick="filterChallenges('plastic')">Plastic</button>
+        </section>
+
+        <p id="counter" class="msg">Selected: 0</p>
+        <section class="cards">
+
+            <article class="card" data-type="plastic">
+                <img src="../images/challenge1.png">
+                <h3>No Plastic Day</h3>
+                <button onclick="joinChallenge(this)">Join</button>
+            </article>
+
+            <article class="card" data-type="transport">
+                <img src="../images/challenge2.png">
+                <h3>Bike to Work</h3>
+                <button onclick="joinChallenge(this)">Join</button>
+            </article>
+
+            <article class="card" data-type="plastic">
+                <img src="../images/challenge3.png">
+                <h3>Reusable Cup</h3>
+                <button onclick="joinChallenge(this)">Join</button>
+            </article>
+
+        </section>
+
+        <p id="message" class="msg"></p>
+
+        <div id="impact-link" class="hidden center">
+            <a href="impact.html" class="btn">See My Impact →</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Eco Life ©</p>
+    </footer>
+
+    <script src="../js/challenges.js"></script>
+</body>
+
+</html>
