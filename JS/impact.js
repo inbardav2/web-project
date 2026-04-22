@@ -27,7 +27,7 @@ function resetImpact() {
     const ul = document.getElementById("list");
     if (ul) ul.innerHTML = "";
 
-    // מאפס progress bar
+    // מאפס ציר התקדמות
     const progress = document.getElementById("progress");
     if (progress) progress.style.width = "0%";
 
