@@ -66,5 +66,5 @@ function updateProgress() {
     } else {
         status.textContent = "Amazing impact! 🌍🔥";
     }
+    document.getElementById("score").textContent = "Score: " + (percent);
 }
-document.getElementById("score").textContent = "Score: " + (percent);
